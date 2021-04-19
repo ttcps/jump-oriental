@@ -1,0 +1,21 @@
+<script type="text/javascript">
+　　　　　　　　var time = 10; //時間,秒
+　　　　　　　　function Redirect() {
+　　　　　　　　window.location = "//ttcps.github.io";
+　　　　　　　　}
+　　　　　　　　var i = 0;
+　　　　　　　　function dis() {
+　　　　　　　　document.all.s.innerHTML =(time - i - 1);
+　　　　　　　　i++;
+　　　　　　　　}
+　　　　　　　　timer = setInterval('dis()', 1000); //顯示時間
+　　　　　　　　timer = setTimeout('Redirect()', time * 1000); //跳轉
+　　　　　　</script>
+<style type="text/css">
+  @import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+</style>
+<h3 style="text-align: center; font-size: 7.5vw;margin:25vh auto; max-width: 900"><a href="https://ttcps.github.io/" style="text-decoration:none; color:black;">Visit our whole new website<span style="font-size: 25px;font-weight: 500"><br>You will be redirected to our new website in <span id="s">10</span> seconds.<br>Or visit now by clicking this text.</span></a>
